@@ -9,7 +9,7 @@ $ASAPAPI->OrganizationID = "1017";
 $ASAPAPI->APIKEY = "C176E58";
 
 
-echo $ASAPAPI->Authenticate();
+echo $ASAPAPI->GetClasses();
 
 
 
