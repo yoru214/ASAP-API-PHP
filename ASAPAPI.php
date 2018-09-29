@@ -64,8 +64,8 @@ class ASAPAPI
     public function GetClasses()
     {
         $this->Authenticate();
-        $this->Request("/Courses/Classes");
-         return $this->Content;
+        $this->Request("/Classes");
+        return $this->Content;
     }
 
     function Request($path = "")
