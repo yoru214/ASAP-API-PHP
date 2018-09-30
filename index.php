@@ -29,4 +29,24 @@ echo $ASAPAPI->GetClasses();
 
 //     echo "<br>";
 // }
+
+
+
+function cd_meta_box_cb()
+{  ?>
+    <label for="my_meta_box_text">Text Label</label>
+    <input type="text" name="my_meta_box_text" id="my_meta_box_text" />
+    <?php 
+
+}
+
+echo "ASDASDASDASD"
+
+add_action( 'add_meta_boxes', 'cd_meta_box_add' );
+function cd_meta_box_add()
+{
+    echo "test";
+    add_meta_box( 'wp-asap-meta-box', 'My First Meta Box', 'cd_meta_box_cb', 'post', 'normal', 'high' );
+}
+
 ?>
